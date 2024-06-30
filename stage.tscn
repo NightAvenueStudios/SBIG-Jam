@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://587id2gc0btv"]
+
+[ext_resource type="PackedScene" uid="uid://ci276w4boa6fx" path="res://Modles/Stage.glb" id="1_26faw"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ikwc6"]
+margin = 0.0
+height = 16.634
+radius = 2.73183
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uhek3"]
+size = Vector3(21.7666, 15.7483, 1.75122)
+
+[node name="Stage" instance=ExtResource("1_26faw")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Cube_001" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cube_001/StaticBody3D" index="0"]
+transform = Transform3D(13.4219, 0, 0, 0, 1.94627, 0, 0, 0, 3.65406, -0.260925, 16.768, 0.256123)
+shape = SubResource("CylinderShape3D_ikwc6")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Cylinder" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cylinder/StaticBody3D" index="0"]
+transform = Transform3D(0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -10.0383, 8.02566, -0.0604248)
+shape = SubResource("BoxShape3D_uhek3")
