@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1256202815	Play			\Default Work Unit\Play	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	968645832	Lexi Holcomb - Trappist Project	C:\Users\DickGirl\Documents\WwiseProjects\OneManShowSD\.cache\Windows\SFX\Lexi Holcomb - Trappist Project_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Lexi Holcomb - Trappist Project\Lexi Holcomb - Trappist Project		32281292
+
