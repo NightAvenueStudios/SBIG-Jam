@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo>
+	<Project Name="OneManShowSD" GUID="{847AA1E8-40CC-48EC-A997-41F7C71989DD}" Generator="2023.1.4.8496"/>
+	<CacheRoot>../../../../Documents/WwiseProjects/OneManShowSD/.cache</CacheRoot>
+	<Platforms>
+		<Platform Name="Windows" GUID="{45574F6D-9F5E-4CB5-9664-14CDDB7676E8}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="Windows"/>
+	</Platforms>
+	<Languages>
+		<Language Name="English(US)" Id="684519430" GUID="{6F518415-C041-4903-87E0-8BF5386E0A3F}" Default="true" UseAsStandIn="true"/>
+	</Languages>
+	<FileHash>{C92D9440-6A9B-2649-95F5-24B00E9261E9}</FileHash>
+</ProjectInfo>

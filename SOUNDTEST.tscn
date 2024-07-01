@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://62ulnl84okek"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="AkBank" type="AkBank" parent="."]
+bank = {
+"id": 1355168291,
+"name": "Init"
+}
+load_on = 1
+
+[node name="EventHolder" type="AkBank" parent="AkBank"]
+bank = {
+"id": 3163537048,
+"name": "Tester"
+}
+load_on = 1
+
+[node name="AkEvent3D" type="AkEvent3D" parent="AkBank/EventHolder"]
+event = {
+"id": 1256202815,
+"name": "Play"
+}
+trigger_on = 1
+
+[node name="AkListener3D" type="AkListener3D" parent="."]
