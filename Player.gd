@@ -2,7 +2,7 @@ extends CharacterBody3D
 
 
 var SPEED
-const JUMP_VELOCITY = 4.69
+const JUMP_VELOCITY = 4.5
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
@@ -32,7 +32,7 @@ func _physics_process(delta):
 		velocity.y = JUMP_VELOCITY
 		
 	if Input.is_action_pressed("run"):
-		SPEED = 15
+		SPEED = 30
 	else:
 		SPEED = 8
 

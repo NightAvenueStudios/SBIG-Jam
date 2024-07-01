@@ -1,10 +1,10 @@
-[gd_scene load_steps=36 format=3 uid="uid://nng1qhadra5l"]
+[gd_scene load_steps=37 format=3 uid="uid://cyjgdmx424r8u"]
 
-[ext_resource type="PackedScene" uid="uid://dhq2k20bw5w2v" path="res://Player.tscn" id="1_sfqg1"]
+[ext_resource type="PackedScene" uid="uid://df1n14vjklciy" path="res://Player.tscn" id="1_sfqg1"]
 [ext_resource type="Material" uid="uid://78k7150p82ve" path="res://textures/Tiles.tres" id="1_xd06i"]
-[ext_resource type="Material" uid="uid://cfqnycp72v04" path="res://textures/carpet.tres" id="2_b5v8x"]
-[ext_resource type="PackedScene" uid="uid://r32ks7rx4sj5" path="res://seats.tscn" id="3_4gr8q"]
-[ext_resource type="PackedScene" uid="uid://587id2gc0btv" path="res://stage.tscn" id="4_a7xdr"]
+[ext_resource type="Material" uid="uid://bhsf2ollc8eio" path="res://textures/carpet.tres" id="2_b5v8x"]
+[ext_resource type="PackedScene" uid="uid://3a3b4yst4fw5" path="res://seats.tscn" id="3_4gr8q"]
+[ext_resource type="PackedScene" path="res://stage.tscn" id="4_a7xdr"]
 [ext_resource type="PackedScene" uid="uid://dp802uqkif85i" path="res://Modles/light.glb" id="5_s6j5a"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_2yt8q"]
@@ -69,8 +69,10 @@ material = ExtResource("1_xd06i")
 flip_faces = true
 size = Vector2(80, 120)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1pma1"]
+
 [sub_resource type="BoxMesh" id="BoxMesh_22owc"]
-material = ExtResource("1_xd06i")
+material = SubResource("StandardMaterial3D_1pma1")
 size = Vector3(80, 30, 0.5)
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_f40sj"]
@@ -248,6 +250,7 @@ shape = SubResource("ConcavePolygonShape3D_qk4w7")
 
 [node name="Flooe1" type="MeshInstance3D" parent="Node"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 29.9067)
+material_override = ExtResource("2_b5v8x")
 mesh = SubResource("PlaneMesh_arjnc")
 skeleton = NodePath("")
 
@@ -258,6 +261,7 @@ shape = SubResource("ConcavePolygonShape3D_hlen3")
 
 [node name="Slope" type="MeshInstance3D" parent="Node"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 2.52743, -14.8111)
+material_override = ExtResource("2_b5v8x")
 mesh = SubResource("PrismMesh_owi6l")
 skeleton = NodePath("../..")
 
@@ -268,6 +272,7 @@ shape = SubResource("ConcavePolygonShape3D_kpp2d")
 
 [node name="Floor2" type="MeshInstance3D" parent="Node"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.99835, -44.8169)
+material_override = ExtResource("2_b5v8x")
 mesh = SubResource("PlaneMesh_qjnc5")
 skeleton = NodePath("")
 
