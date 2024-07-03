@@ -1,6 +1,6 @@
 [gd_scene load_steps=23 format=3 uid="uid://b3jy1pfwknwn"]
 
-[ext_resource type="PackedScene" uid="uid://bsbag743vfhan" path="res://Modles/bmap1-oms.glb" id="1_18nfj"]
+[ext_resource type="PackedScene" uid="uid://bcddatikyonrn" path="res://Modles/masterfile-oms.glb" id="1_18nfj"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_mj2vd"]
 size = Vector3(5.33919, 3.99646, 9.35915)
@@ -128,10 +128,10 @@ shape = SubResource("BoxShape3D_a71u0")
 transform = Transform3D(0.999999, 0, -2.72848e-12, 0, 1, 0, -7.7307e-12, 0, 1, -4.60844, 1.63682, -3.47763)
 shape = SubResource("BoxShape3D_a71u0")
 
-[node name="Cylinder_002" parent="." index="25"]
+[node name="Cylinder_002" parent="." index="24"]
 transform = Transform3D(-1, -5.06706e-07, -3.04898e-07, 5.06706e-07, -0.46835, -0.883543, 3.04898e-07, -0.883543, 0.46835, 0, 22.7885, 9.55661)
 
-[node name="Cylinder_003" parent="." index="26"]
+[node name="Cylinder_003" parent="." index="25"]
 transform = Transform3D(-0.866026, 0.441771, -0.234175, 2.23517e-07, -0.46835, -0.883543, -0.499999, -0.765171, 0.405603, -36.7478, 22.7885, 9.55661)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Cylinder_003" index="0"]
@@ -158,10 +158,11 @@ spot_attenuation = 0.0507658
 spot_angle = 24.36
 spot_angle_attenuation = 0.392292
 
-[node name="Cylinder_004" parent="." index="27"]
+[node name="Cylinder_004" parent="." index="26"]
 transform = Transform3D(-0.866025, -0.441772, 0.234175, 2.23517e-07, -0.46835, -0.883543, 0.500001, -0.76517, 0.405603, 36.1931, 22.7885, 9.55661)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Plane_005" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Plane_005/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_cs1oh")
@@ -172,7 +173,7 @@ shape = SubResource("ConcavePolygonShape3D_cs1oh")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0118408, -1.11872, 0.600586)
 shape = SubResource("BoxShape3D_khxum")
 
-[node name="Stairs" parent="." index="71"]
+[node name="Stairs" parent="." index="70"]
 transform = Transform3D(3.53011, -8.99856e-08, 0, 3.08612e-07, 1.02932, 0, 0, 0, -3.26542, -7.61974, 4.29963, 42.4741)
 ignore_occlusion_culling = true
 
