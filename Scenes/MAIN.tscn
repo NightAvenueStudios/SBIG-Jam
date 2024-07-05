@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=3 uid="uid://0a6jf2t8wbnt"]
+
+[ext_resource type="PackedScene" uid="uid://b3jy1pfwknwn" path="res://Scenes/bmap_1_oms.tscn" id="1_r24du"]
+[ext_resource type="PackedScene" uid="uid://df1n14vjklciy" path="res://Scenes/Player.tscn" id="2_2by6t"]
+[ext_resource type="Script" path="res://Scenes/Lights.gd" id="3_ttc7q"]
+
+[node name="LEVEL" type="Node3D"]
+
+[node name="bmap1-oms" parent="." instance=ExtResource("1_r24du")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.99907, 0, 5.3763)
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("2_2by6t")]
+transform = Transform3D(2.75, 0, 0, 0, 2.75, 0, 0, 0, 2.75, -18.3128, 3.68357, -12.2139)
+
+[node name="StageLightLeft" type="SpotLight3D" parent="."]
+transform = Transform3D(0.768076, -0.443449, -0.461965, 0.600937, 0.74836, 0.280771, 0.221209, -0.493266, 0.841282, -40.5554, 22.887, 14.0043)
+light_energy = 1.513
+spot_range = 76.0903
+spot_attenuation = 0.0507658
+spot_angle = 22.3811
+spot_angle_attenuation = 0.392292
+script = ExtResource("3_ttc7q")
+
+[node name="StageLightRight" type="SpotLight3D" parent="."]
+transform = Transform3D(0.886649, 0.0122881, 0.46228, -0.13745, 0.961473, 0.23807, -0.441544, -0.274624, 0.854178, 33.7593, 22.3078, 15.1268)
+light_energy = 1.513
+spot_range = 62.1563
+spot_attenuation = 0.0507658
+spot_angle = 22.4997
+spot_angle_attenuation = 0.392292
+
+[node name="StageLightCenter" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.95958, 0.281437, 0, -0.281437, 0.95958, -2.90334, 22.7143, 14.6874)
+light_energy = 1.513
+spot_range = 59.1246
+spot_attenuation = 0.0507658
+spot_angle = 24.36
+spot_angle_attenuation = 0.392292
